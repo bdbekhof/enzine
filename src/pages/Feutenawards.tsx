@@ -24,10 +24,11 @@ function Feutenawards() {
     return(
         <div className={styles.feutenawardsContainer}>
             <form onSubmit={handleSubmit}>
-                <h1>De feutenawards</h1>
+                <h1 className={styles.h1}>De feutenawards</h1>
                 <div className={styles.personalInfo}>
-                    <label htmlFor="name"><FontAwesomeIcon icon={faUser} /> Jouw naam*</label>
+                    <label className={styles.label} htmlFor="name"><FontAwesomeIcon icon={faUser} /> Jouw naam*</label>
                     <input
+                        className={styles.input}
                         type="text"
                         id="name"
                         name="name"
@@ -38,8 +39,9 @@ function Feutenawards() {
                         required
                     />
 
-                    <label htmlFor="email"><FontAwesomeIcon icon={faEnvelope} /> Jouw email</label>
+                    <label className={styles.label} htmlFor="email"><FontAwesomeIcon icon={faEnvelope} /> Jouw email</label>
                     <input 
+                        className={styles.input}
                         type="email"
                         id="email"
                         name="email"
@@ -49,11 +51,12 @@ function Feutenawards() {
                     />
                 </div>
 
-                <h2>Vul hieronder de namen van de genomineerden in.</h2>
+                <h2 className={styles.h2}>Vul hieronder de namen van de genomineerden in.</h2>
                 
                 <div className={styles.feutenInputs}>
-                    <label htmlFor="kookfeut"><FontAwesomeIcon icon={faKitchenSet} /> De beste kookfeut</label>
+                    <label className={styles.label} htmlFor="kookfeut"><FontAwesomeIcon icon={faKitchenSet} /> De beste kookfeut</label>
                     <input 
+                        className={styles.input}
                         type="text"
                         id="kookfeut"
                         name="kookfeut"
@@ -61,8 +64,9 @@ function Feutenawards() {
                         onChange={handleChange}
                     />
 
-                    <label htmlFor="tapfeut"><FontAwesomeIcon icon={faWhiskeyGlass} /> De beste tapfeut</label>
+                    <label className={styles.label} htmlFor="tapfeut"><FontAwesomeIcon icon={faWhiskeyGlass} /> De beste tapfeut</label>
                     <input 
+                        className={styles.input}
                         type="text"
                         id="tapfeut"
                         name="tapfeut"
@@ -70,8 +74,9 @@ function Feutenawards() {
                         onChange={handleChange}
                     />
 
-                    <label htmlFor="bierfeut"><FontAwesomeIcon icon={faBeerMugEmpty} /> De meest bier drinkende feut</label>
+                    <label className={styles.label} htmlFor="bierfeut"><FontAwesomeIcon icon={faBeerMugEmpty} /> De meest bier drinkende feut</label>
                     <input 
+                        className={styles.input}
                         type="text"
                         id="bierfeut"
                         name="bierfeut"
@@ -79,22 +84,24 @@ function Feutenawards() {
                         onChange={handleChange}
                     />
 
-                    <label htmlFor="seksfeut"><FontAwesomeIcon icon={faHeart} /> De meest seksueel actieve feut</label>
+                    <label className={styles.label} htmlFor="seksfeut"><FontAwesomeIcon icon={faHeart} /> De meest seksueel actieve feut</label>
                     <input 
-                            type="text"
-                            id="seksfeut"
-                            name="seksfeut"
-                            value={inputs.seksfeut || ""}
-                            onChange={handleChange}
+                        className={styles.input}
+                        type="text"
+                        id="seksfeut"
+                        name="seksfeut"
+                        value={inputs.seksfeut || ""}
+                        onChange={handleChange}
                         />
 
-                    <label htmlFor="actievefeut"><FontAwesomeIcon icon={faChartLine} /> De meest actieve feut overall</label>
+                    <label className={styles.label} htmlFor="actievefeut"><FontAwesomeIcon icon={faChartLine} /> De meest actieve feut overall</label>
                     <input 
-                            type="text"
-                            id="actievefeut"
-                            name="actievefeut"
-                            value={inputs.actievefeut || ""}
-                            onChange={handleChange}
+                        className={styles.input}
+                        type="text"
+                        id="actievefeut"
+                        name="actievefeut"
+                        value={inputs.actievefeut || ""}
+                        onChange={handleChange}
                         />
                 </div>
                 <button className={styles.submitButton}>Versturen</button>
