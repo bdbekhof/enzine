@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import styles from '../src/styles/app.module.css';
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
 import Home from './pages/Home.tsx';
@@ -10,7 +11,7 @@ import Stampboom from './pages/Stampboom.tsx';
 
 function App() {
   return (
-    <div>
+    <div className={styles.mainContainer}>
       <Router>
         <Navbar />
         <Routes>

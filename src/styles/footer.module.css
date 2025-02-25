@@ -1,0 +1,53 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    gap: 20px;
+    background-color: rgba(219, 219, 219, 0.5);
+}
+
+.mainFooterContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.mainFooterText {
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.footerSocialLinks {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerLinks {
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.footerAHref {
+    text-decoration: none;
+    color: rgb(255, 136, 0)
+}
+
+.footerAHref:hover {
+    color: rgb(3, 0, 104);
+    transition: all 0.5s ease-in-out;
+}
